@@ -46,6 +46,7 @@ button {
   padding: 35px;
   color: #BC8F8F;
   margin: 20px;
+  background-color: #e6e6ff;
 }
 section {
   border-right: 10px;
@@ -82,6 +83,7 @@ margin: 0 auto;
   padding: 10px;
   font-size: 20px;
   color: #A0522D;
+  background-color: white;
 }
 .social {
   text-align: center;
