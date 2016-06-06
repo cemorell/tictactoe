@@ -2,39 +2,40 @@
 <html>
 <head>
   <title>TIC TAC TOE</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
   <header>
-  <h1>Tic Tac Toe for enthusiasts</h1>
+  <h1>Tic Tac Toe for Enthusiasts</h1>
+  </header>
   <div class="Options">
     <nav>
       <ul>
-        <li>Rules</li>
-        <li>Stratagies</li>
-        <li>history</li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">Stradegy</a></li>
+        <li><a href="#">History</a></li>
       </ul>
     </nav>
   </div>
-  </header>
   <div class="container">
     <p> Whether on an airplane, waiting room, or deciding who does the dishes, Tic Tac Toe is a simple game of luck, strategy and who-goes-first. A game suitable for all ages and situations, may the odds be ever in your favor!</p>
   </div>
   <div class="game">
     <section class="row1">
-      <div id="box1"> box1</div>
-      <div id="box2">box2</div>
-      <div id="box3">box3</div>
+      <button id="box1"> X? </button>
+      <button id="box2"> X?</button>
+      <button id="box3">X?</button>
     </section>
     <section class="row2">
-      <div id="box4">box4</div>
-      <div id="box5">box5</div>
-      <div id="box6">box6</div>
+      <button id="box4">X?</button>
+      <button id="box5">X?</button>
+      <button id="box6">X?</button>
     </section>
     <section class="row3">
-      <div id="box7">box7</div>
-      <div id="box8">box8</div>
-      <div id="box9">box9</div>
+      <button id="box7">X?</button>
+      <button id="box8">X?</button>
+      <button id="box9">X?</button>
     </section>
   </div>
   <div class="plays">
@@ -42,14 +43,13 @@
     <button id="five">play to five</button>
     <button id="one"> play again</button>
   </div>
-  <div class="container">
+  <div class="social">
    <h2> Post your score! </h2>
-    <a href="www.facebook.com"><img src="#"></a>
-    <a href="www.twitter.com"><img src="#"></a>
+    <a href="www.facebook.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmCAMAAAAOARRQAAAAb1BMVEX///8AAAA9PT1BQUHa2tr4+PjOzs6FhYW4uLj19fWUlJRGRkbw8PDh4eEfHx+cnJwmJiZvb29TU1N3d3fExMSsrKwZGRlcXFw0NDRKSkrq6uosLCw5OTnS0tJeXl5jY2MMDAylpaXGxsYTExN1dXWpB1BeAAAEHElEQVRogb2aaXezKhCAzaJg1LjEuCQmse37/3/jDQOiicsMeg/zoee0FR9hVgYchyZueIs4ewZVUrRtkVTBk/HoFrrE4SSJPH6pdhNSXbgX/T8Ml7PsPMWQcs4Y3z6nGwsWGIoUsNsWhu+Vw9e1SVNnWfl6lVlWN0k7/F/p+Wshedq/pshYfM0j/S4/yq8xy4r+iTRfBfJ6SDGnaWEbPSn1zClMq+TAl+zWDflBK4mZMdy8W/j9iaDd22nfqS83sLqQqVHBiegV0SlQQ1hIpRw7+4oNXC+KO5s70gbwu3y+NvTvqJbj7pzydNwp3gwCH6iMIcYfPSnjJE79U47KCU7Yg0r5J7IiPyVUX4lYtqScVyxYJ/yMc+S3NCu8uRevwdZNar9+bKE4zqNetgMuKauUP5Sj5Mys/BH8pdk4FyEPWLf75PeG4PvnTXrpxAM7KCfM1WVLMx2K/5vzq5bfyVgp15+N/5fT/MqJ2Os+SGa7dNrDpM3mo7+3C2MGEv/tPmVmSAjxoP3+MyzZATMyl+2+Ze7LjocJL5U6QxVzHVHmF4CPLcqHKdYYJQoMMA54TzqsQ6T+0fzyM6YsYKJvK5CTQbNEWBthZOwaTMcTvwfoZG4TlCWMXONeO+D/uMs8pjCvBR8A5yk/vnKPZ34+eHvwL/4BWaqYIqirugqM0SbT5e+3/BGe1iOU77jBkLkgF42hVpewToGcL6TVPWGQ3h60v0SMI1atkF4Pa0bJ/rpWrsg5ieu5R5kgUiqZrlDGY5+WUATzTFgXhLMLpcJegXGFPiGwceqarcHotwOvIKXmNRivkGsVVt3qLYgfvsVtOszeC7Ugqw2ar0Jp2ogfuD+v9C06Nxdl2skFmxiTTgnhGgnOfu+Y31JhGAjTEeiova7GZJiJXluwATGpZFyBUDEvhOLkCSjl+f7ZYBYwj7lgmEgYztMRcbNGGgcLGDTl+iLlBg7YM/boPAYPomDRTrINg8dCgUkc4Qwl8uQCBqVA+iigqMXMxU/nKH845rUTRS4Fo0TnG7wIGmEoi6ZkTejsFo1iApsw0gQoBr0ZU5HccwtGuScl2GzBqGBDCZ1bMCp0UhLBFoxKBJS0tgWj0holSW/BqCRNKjnWY7qSw1IBZakctFXcWirV6RuPFZh+40HfRq3ADLZR5E2hOWa4KSRvcc0xwy0uecNujPncsFPbD8aYz/YDtZliivluphBbQ6aY79YQsdFliBk1uohtO0PMuG1Ha0KaYSaakLSWqhFmsqVKahCbYGYaxJR2tz5kb3DMXLub0LzXLXuOpo3Z5r2lowhbByu2jolsHXrZOsKzdSBp63jV1mGxraNvWwf5tq4l2LpkYevKiBAbF2CE2LnOY+tykmPpqhWIjYtjIFauwYHYuNQnZeMVxf8ATY4+kdHcF8EAAAAASUVORK5CYII="></a>
+    <a href="www.twitter.com"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg8ZjPpiIrDZOPZ4y30VsyvknUnE3tZZfa5raeOCE1OAC0nkGjCg"></a>
   </div>
   <footer class="info">
     <h3>copyright 2013</h3>
   </footer>
-
 </body>
 </html>
