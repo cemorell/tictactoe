@@ -32,6 +32,10 @@ li {
   padding: 25px;
   font-size: 21px;
 }
+li:hover {
+  background-color: #e6e6ff;
+}
+
 .container {
   padding: 20px 50px 20px 60px;
 }
@@ -71,16 +75,16 @@ margin: 0 auto;
 }
 .plays {
   text-align: center;
-  padding: 50px;
+  padding: 10px;
   background-color: #b8cce0;
-  margin-top: 100px;
+  margin-top: 10px;
   font-size: 25px;
 }
 .plays h4 {
   font-size: 30px;
 }
 .plays button {
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 20px;
   color: #A0522D;
   background-color: white;
@@ -91,6 +95,10 @@ margin: 0 auto;
 }
 a {
   padding: 20px;
+}
+.social a:hover {
+  -webkit-filter: opacity(20%);
+  filter: opacity(20%);
 }
 footer {
   text-align: right;
