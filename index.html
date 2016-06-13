@@ -3,12 +3,16 @@
 <head>
   <title>TIC TAC TOE</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
-<body>
+<body class="container">
+
   <header>
   <h1>Tic Tac Toe for Enthusiasts</h1>
   </header>
+
   <div class="Options">
     <nav>
       <ul>
@@ -18,31 +22,43 @@
       </ul>
     </nav>
   </div>
-  <div class="container">
-    <p> Whether on an airplane, waiting room, or deciding who does the dishes, Tic Tac Toe is a simple game of luck, strategy and who-goes-first. A game suitable for all ages and situations, may the odds be ever in your favor!</p>
+  <div class="paragraph">
+    <p> Whether on an airplane, waiting room, or deciding who does the dishes, Tic Tac Toe is a simple game of luck, strategy and a bit of who-goes-first. A game suitable for all ages and situations, Tic-Tac-Toe is the perfect way to make the time go by! Grab a friend, pick a character and play! May the odds be ever in your favor!</p>
   </div>
-  <div class="game">
-    <section class="row1">
-      <button id="box1"> X? </button>
-      <button id="box2"> X?</button>
-      <button id="box3">X?</button>
+
+
+
+
+
+
+  <div class="game row">
+    <section class="line1 col-xs-12 col-m-9">
+      <button id="box1" class="plays"></button>
+      <button id="box2" class="plays"></button>
+      <button id="box3" class="plays"></button>
     </section>
-    <section class="row2">
-      <button id="box4">X?</button>
-      <button id="box5">X?</button>
-      <button id="box6">X?</button>
+    <section class="line2 col-xs-12 col-m-9">
+      <button id="box4" class="plays"></button>
+      <button id="box5" class="plays"></button>
+      <button id="box6" class="plays"></button>
     </section>
-    <section class="row3">
-      <button id="box7">X?</button>
-      <button id="box8">X?</button>
-      <button id="box9">X?</button>
+    <section class="line3 col-xs-12 col-m-8">
+      <button id="box7" class="plays"></button>
+      <button id="box8" class="plays"></button>
+      <button id="box9" class="plays"></button>
     </section>
   </div>
   <div class="plays">
-    <h4> play one-by-one or best of 5! </h4>
-    <button id="five">play to five</button>
-    <button id="one"> play again</button>
+    <h4> Pick your player </h4>
+    <button id="playerX">player1</button>
+    <button id="playerO"> Player2</button>
   </div>
+
+
+
+
+
+
   <div class="social">
    <h2> Post your score! </h2>
     <a href="www.facebook.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAABmCAMAAAAOARRQAAAAb1BMVEX///8AAAA9PT1BQUHa2tr4+PjOzs6FhYW4uLj19fWUlJRGRkbw8PDh4eEfHx+cnJwmJiZvb29TU1N3d3fExMSsrKwZGRlcXFw0NDRKSkrq6uosLCw5OTnS0tJeXl5jY2MMDAylpaXGxsYTExN1dXWpB1BeAAAEHElEQVRogb2aaXezKhCAzaJg1LjEuCQmse37/3/jDQOiicsMeg/zoee0FR9hVgYchyZueIs4ewZVUrRtkVTBk/HoFrrE4SSJPH6pdhNSXbgX/T8Ml7PsPMWQcs4Y3z6nGwsWGIoUsNsWhu+Vw9e1SVNnWfl6lVlWN0k7/F/p+Wshedq/pshYfM0j/S4/yq8xy4r+iTRfBfJ6SDGnaWEbPSn1zClMq+TAl+zWDflBK4mZMdy8W/j9iaDd22nfqS83sLqQqVHBiegV0SlQQ1hIpRw7+4oNXC+KO5s70gbwu3y+NvTvqJbj7pzydNwp3gwCH6iMIcYfPSnjJE79U47KCU7Yg0r5J7IiPyVUX4lYtqScVyxYJ/yMc+S3NCu8uRevwdZNar9+bKE4zqNetgMuKauUP5Sj5Mys/BH8pdk4FyEPWLf75PeG4PvnTXrpxAM7KCfM1WVLMx2K/5vzq5bfyVgp15+N/5fT/MqJ2Os+SGa7dNrDpM3mo7+3C2MGEv/tPmVmSAjxoP3+MyzZATMyl+2+Ze7LjocJL5U6QxVzHVHmF4CPLcqHKdYYJQoMMA54TzqsQ6T+0fzyM6YsYKJvK5CTQbNEWBthZOwaTMcTvwfoZG4TlCWMXONeO+D/uMs8pjCvBR8A5yk/vnKPZ34+eHvwL/4BWaqYIqirugqM0SbT5e+3/BGe1iOU77jBkLkgF42hVpewToGcL6TVPWGQ3h60v0SMI1atkF4Pa0bJ/rpWrsg5ieu5R5kgUiqZrlDGY5+WUATzTFgXhLMLpcJegXGFPiGwceqarcHotwOvIKXmNRivkGsVVt3qLYgfvsVtOszeC7Ugqw2ar0Jp2ogfuD+v9C06Nxdl2skFmxiTTgnhGgnOfu+Y31JhGAjTEeiova7GZJiJXluwATGpZFyBUDEvhOLkCSjl+f7ZYBYwj7lgmEgYztMRcbNGGgcLGDTl+iLlBg7YM/boPAYPomDRTrINg8dCgUkc4Qwl8uQCBqVA+iigqMXMxU/nKH845rUTRS4Fo0TnG7wIGmEoi6ZkTejsFo1iApsw0gQoBr0ZU5HccwtGuScl2GzBqGBDCZ1bMCp0UhLBFoxKBJS0tgWj0holSW/BqCRNKjnWY7qSw1IBZakctFXcWirV6RuPFZh+40HfRq3ADLZR5E2hOWa4KSRvcc0xwy0uecNujPncsFPbD8aYz/YDtZliivluphBbQ6aY79YQsdFliBk1uohtO0PMuG1Ha0KaYSaakLSWqhFmsqVKahCbYGYaxJR2tz5kb3DMXLub0LzXLXuOpo3Z5r2lowhbByu2jolsHXrZOsKzdSBp63jV1mGxraNvWwf5tq4l2LpkYevKiBAbF2CE2LnOY+tykmPpqhWIjYtjIFauwYHYuNQnZeMVxf8ATY4+kdHcF8EAAAAASUVORK5CYII="></a>
@@ -51,5 +67,7 @@
   <footer class="info">
     <h3>copyright 2013</h3>
   </footer>
+  <script src="http://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>

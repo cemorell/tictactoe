@@ -5,15 +5,15 @@
 
 
 body {
-  font-family: 'Open Sans', sans-serif;
-}
+/*  font-family: 'Open Sans', sans-serif;
+*/}
 header {
   text-align: center;
   padding: 15px;
 }
 h1 {
-  font-size: 44px;
-}
+/*  font-size: 44px;
+*/}
 nav {
   text-align: center;
   background-color: #B0C4DE;
@@ -36,7 +36,7 @@ li:hover {
   background-color: #e6e6ff;
 }
 
-.container {
+.paragraph {
   padding: 20px 50px 20px 60px;
 }
 
@@ -47,28 +47,33 @@ li:hover {
 }
 button {
   font-size: 10px;
-  padding: 35px;
+  padding: 45px;
   color: #BC8F8F;
   margin: 20px;
   background-color: #e6e6ff;
 }
+.game button:hover {
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+}
 section {
   border-right: 10px;
 }
-.row1 {
-border-bottom: 4px solid black;
-width: 40%;
-margin: 0 auto;
+.line1 {
+/*border-bottom: 4px solid black;
+*//*width: 40%;
+/**//*margin: 5 auto;
+*/
+}
+.line2 {
+ /* border-bottom: 4px solid black;
+ width: 40%;
+  margin: 0 auto;*/
 
 }
-.row2 {
-  border-bottom: 4px solid black;
-  width: 40%;
-  margin: 0 auto;
-
-}
-.row3 {
-
+.line3 {
+/*  margin: 5 auto;
+*/
 }
 #box1 {
   margin-right: 4px solid black;
